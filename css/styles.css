@@ -1,0 +1,138 @@
+/*
+    Archivo: styles.css
+    Descripción: Estilos para la página principal del portfolio.
+    Autor: Segovia Oscar
+    Fecha: 28/4/25
+*/
+
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    /* Fuente web-safe */
+    margin: 0;
+    padding: 0;
+    background-color: #2b326e;
+    color: #997ff7;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #9084f5;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+main {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2 {
+    color: #0056b3;
+    /* Un color azulado para los títulos */
+}
+
+/* Estilos para la sección sobre mí */
+#sobre-mi {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.mi-foto {
+    width: 200px;
+    /* Ancho de la imagen */
+    height: auto;
+    /* Altura automática para mantener la proporción */
+    border-radius: 50%;
+    /* Hace la imagen circular */
+    margin-bottom: 10px;
+}
+
+/* Estilos para la sección de tecnologías */
+#tecnologias table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#tecnologias th,
+#tecnologias td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#tecnologias th {
+    background-color: #f2f2f2;
+}
+
+/* Estilos para la sección de contacto */
+#contacto form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /* Dos columnas para etiquetas y campos */
+    grid-gap: 10px;
+}
+
+#contacto label {
+    text-align: right;
+    padding-right: 10px;
+}
+
+#contacto input,
+#contacto textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+#contacto button {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    grid-column: 2;
+    /* Ocupa la segunda columna */
+    justify-self: start;
+    /* Alineado a la izquierda */
+}
+
+#contacto button:hover {
+    background-color: #004494;
+}
+
+/* Estilos para el pie de página */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: white;
+    /* TODO:  Mejorar la ubicación del footer para que siempre esté al final de la página */
+}
+
+/* Media Queries para hacerlo responsive */
+
+@media (max-width: 768px) {
+    main {
+        width: 95%;
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    #contacto form {
+        grid-template-columns: 1fr;
+        /* Una sola columna en pantallas pequeñas */
+    }
+
+    #contacto label {
+        text-align: left;
+    }
+
+    /* TODO: Ajustar el tamaño de la imagen y la tabla para pantallas más pequeñas */
+}

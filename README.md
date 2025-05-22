@@ -1,0 +1,5 @@
+# Mi Primer Portfolio Web
+
+Este proyecto corresponde a la Práctica Formativa 1 y consiste en la creación de un portfolio web básico utilizando HTML y CSS. El objetivo principal fue demostrar el conocimiento y manejo de etiquetas HTML, la estructura de una página web, y el estilado mediante un archivo CSS externo. Se ha puesto especial atención en la organización del código, la semántica HTML5 y la aplicación de estilos con CSS, incluyendo el uso de selectores, propiedades de texto, color, dimensiones y un diseño responsive básico.
+
+El código se organiza en dos archivos principales: `index.html` para la estructura y `css/styles.css` para la presentación. Se incluyen comentarios para facilitar la comprensión del código y se señalan posibles mejoras futuras, como la implementación de la funcionalidad del formulario de contacto y la optimización de la responsividad.
